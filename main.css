@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+#left-side {
+  background-color: black;
+  color: white;
+  height: 30vh;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  
+   background-image: url("http://www.pngmart.com/files/4/Nelson-Mandela-Transparent-Background.png");
+  background-size: cover;
+  background-position: center center;
+    
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#right-side {
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+@media (min-width: 768px) {
+  #left-side {
+    background-color: black;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    position: absolute;
+  }
+
+  #right-side {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+    height: 100vh;
+    position: absolute;
+  }
+}
+div {
+  text-align: center;
+}
